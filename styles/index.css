@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(0deg, #000000, #ed1c16, #FFFFFF);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=index.css.map */
