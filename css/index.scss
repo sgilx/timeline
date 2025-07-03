@@ -1,0 +1,40 @@
+$background-soda:linear-gradient(0deg, #000000, #ed1c16, #FFFFFF);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: $background-soda;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    padding: 5px;
+}
+
+.timeline {
+    @include flexCenter();
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  align-items: center;
+}
+
+.intro {
+    @include flexCenter();
+    flex-direction: column;
+}
+
+.bottle {
+    padding: 10px 10px;
+}
