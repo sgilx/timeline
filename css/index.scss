@@ -1,4 +1,5 @@
-$background-soda:linear-gradient(0deg, #000000, #ed1c16, #FFFFFF);
+$background-soda:linear-gradient(to top, #000000 0%, #ed1c16 50%, #FFFFFF 100%);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @mixin flexCenter {
     display: flex;
@@ -8,33 +9,44 @@ $background-soda:linear-gradient(0deg, #000000, #ed1c16, #FFFFFF);
 
 body {
     background: $background-soda;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-    padding: 5px;
-}
-
-.timeline {
-    @include flexCenter();
-}
-
-.container {
-  display: flex;
-  overflow-x: auto;
-  padding: 10px;
-  align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .intro {
     @include flexCenter();
     flex-direction: column;
+    margin: 40px;
+    margin-top: 35%
 }
 
-.bottle {
-    padding: 10px 10px;
+.btn-container {
+    @include flexCenter();
+    justify-content: space-around;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    height: auto;
+}
+
+h4, p {
+    @include flexCenter();
+    margin: 15px;
+}
+
+footer {
+    color: #FFFFFF;
+    margin-top: 55%;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 420px) {
+    .btn-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
